@@ -3,7 +3,7 @@ setup = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       let latitude = position.coords.latitude;
       let longitude = position.coords.longitude;
-      const getDefaultCity = new WeatherApp('212514b52ee74f93d002ad15b350fc09', latitude, longitude);
+      const getDefaultCity = new WeatherApp('', latitude, longitude);
 
       getDefaultCity.defaultCity.then(res => {
 

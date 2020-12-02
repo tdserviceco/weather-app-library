@@ -1,5 +1,5 @@
 .weather-app {
-  min-height: calc(100vh - 2rem);
+  padding-top: 2.3rem;
 }
 
 .hide {
@@ -8,4 +8,11 @@
 
 .show {
   opacity: 1;
+}
+
+.error-block {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2rem;
 }

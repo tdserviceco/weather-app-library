@@ -1,74 +1,47 @@
 @import './reset.css';
-
+@import './pulseBackground.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
 
 :root {
   --font: font-family: 'Roboto', sans-serif;
 }
 
-.decent-weather {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-  color: #fff;
-}
-
-.cold-weather {
-  background: rgb(174,205,238);
-  background: linear-gradient(203deg, rgba(174,205,238,1) 24%, rgba(179,183,222,1) 65%, rgba(171,184,225,1) 74%, rgba(169,184,226,1) 76%, rgba(167,185,227,1) 79%, rgba(148,187,233,1) 100%);
-  color: #fff;
-}
-
-.warm-weather {
-  background: rgb(131, 58, 180);
-  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-  color: #fff;
-}
-
-input[type="submit"] {
-  cursor: pointer;
-}
-
-.weather-app {
-  min-width: 50%;
-  display: flex;
+.city-form,
+.container {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  background: #fff;
+  width: 50%;
   margin: 0 auto;
 }
 
-label > #city {
-  min-width: 100%;
-}
-.container input {
-  border: none;
-  border-radius: 0;
+.city-form, .city-form input {
   padding: 1rem;
-  margin-bottom: 2rem;
 }
 
-.container input:focus, .container input:hover {
-  outline: none;
+.searchBar,
+.submit-btn {
+  border-radius: 0;
+  background: #e3e3e3;
+  border: 0.00625rem solid rgba(0,0,0,0.5);
 }
 
-.weather-type-icon {
-  zoom: 1.5;
+.searchBar {
+  transition: all 0.75s ease-in;
+  border-right: none;
 }
 
-.weather-description, .weather-speed, .weather-degree, .error, .current-city-with-search-city, .city {
-  margin-top: 1rem;
-  font-size: 2rem;
-  text-transform: capitalize;
-  font-family: var(--font);
-  font-weight: 100;
+.submit-btn {
+  border-left: 0.00625rem solid rgba(0,0,0,0.5);
 }
 
-.weather-speed, .current-city-with-search-city {
-  text-transform: inherit;
+.searchBar:hover,
+.searchBar:focus {
+  background: #e3e3e3;
+
 }
 
-.weather-description, .weather-type-icon, .weather-speed, .weather-degree, .error, .current-city-with-search-city, .city {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.city-form {
+  font-size: 1.2rem;
 }

@@ -1,0 +1,25 @@
+@keyframes pulse { 
+  0% { 
+      background-color: #0000ff;  
+  } 
+
+  50% { 
+      background-color: #ffa500; 
+  } 
+
+  100% { 
+      background-color: #ff0000; 
+  } 
+} 
+
+.weather-app.loading {
+  background-color: #fff;
+  animation-name: pulse;
+  animation-duration: 5.20s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transition: background-color 0.75s ease-out;
+}
+
